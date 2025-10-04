@@ -11,7 +11,7 @@ export const Home = () => {
             <SettingsIcon size={36} className="text-blue-400" />
           </div>
           <h1 className="text-3xl font-bold text-center mb-8 text-white">
-            Haval H6 Exploit
+            Haval H6 Exploit by RickESTEFANO
           </h1>
           <div className="space-y-5">
             <Link
