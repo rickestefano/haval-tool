@@ -149,7 +149,7 @@ async fn inject_script(
     // Download do script da URL sempre atualizada
     let client = reqwest::Client::new();
     let install_script = client
-        .get("https://raw.githubusercontent.com/tontonhaval/haval-tool/refs/heads/main/install.sh")
+        .get("https://raw.githubusercontent.com/rickestefano/haval-tool/refs/heads/main/install.sh")
         .send()
         .await
         .map_err(|_| ApiError::DownloadFailed)?
