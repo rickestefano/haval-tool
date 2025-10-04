@@ -57,7 +57,7 @@ get_saved_version() {
 # Verificacao de versoes
 check_versions() {
     shizuku_latest=$(get_latest_version "https://github.com/RikkaApps/Shizuku")
-    haval_latest=$(get_latest_version "https://github.com/bobaoapae/haval-app-tool-multimidia")
+    haval_latest=$(get_latest_version "https://github.com/rickestefano/haval-app-tool-multimidia")
     shizuku_saved=$(get_saved_version "shizuku")
     haval_saved=$(get_saved_version "haval_app")
     
@@ -102,7 +102,7 @@ main() {
     download "https://havaltool.s3.us-east-1.amazonaws.com/fridainject.rar" "fridainject" "fridainject"
     download "https://havaltool.s3.us-east-1.amazonaws.com/system_server.js" "system_server.js" "system_server.js"
     download "$(get_latest_release "https://github.com/RikkaApps/Shizuku")" "shizuku.apk" "Shizuku APK"
-    download "$(get_latest_release "https://github.com/bobaoapae/haval-app-tool-multimidia")" "haval.apk" "Haval APK"
+    download "$(get_latest_release "https://github.com/rickestefano/haval-app-tool-multimidia")" "haval.apk" "Haval APK"
     
     # Permissoes
     log "INFO" "Fase 2: Permissoes"
@@ -132,7 +132,7 @@ main() {
     
     # Salva versoes
     save_version "shizuku" "$(get_latest_version "https://github.com/RikkaApps/Shizuku")"
-    save_version "haval_app" "$(get_latest_version "https://github.com/bobaoapae/haval-app-tool-multimidia")"
+    save_version "haval_app" "$(get_latest_version "https://github.com/rickestefano/haval-app-tool-multimidia")"
     
     # Limpa arquivos temporarios 
     rm -f shizuku.apk haval.apk
